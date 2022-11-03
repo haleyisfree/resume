@@ -65,6 +65,13 @@ span,
 time {
   font-size: 1rem;
 }
+details {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
 
 footer {
   position: fixed;
@@ -78,12 +85,12 @@ footer {
 .progress-container {
   width: 100%;
   height: 0.5rem;
-  background: linear-gradient(70deg, #253c30, #cfe1d8);
+  background: #c9c9c9;
 }
 .progress-bar {
   width: 0%;
   height: 0.5rem;
-  background: #1c2d24;
+  background: linear-gradient(70deg, #253c30, #52aa7e);
 }
 .gradiant {
   background: linear-gradient(100deg, #000000, #30ff9b);
@@ -118,6 +125,41 @@ footer {
   margin-bottom: 3rem;
 }
 
+.contact-container {
+  display: flex;
+  margin: auto;
+}
+.image-box {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profile-image {
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-box {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-box {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+}
+.comment {
+  border: 1px solid #eee;
+  padding: 1rem;
+}
 #top-button,
 #contact-button {
   all: unset;
@@ -128,4 +170,7 @@ footer {
 #top-button:hover,
 #contact-button:hover {
   color: #448764;
+}
+#contact-title {
+  margin-bottom: 2rem;
 }
