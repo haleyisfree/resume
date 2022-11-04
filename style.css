@@ -15,6 +15,11 @@ main {
   width: 70%;
   margin: 5rem auto;
 }
+@media screen and (max-width: 960px) {
+  main {
+    width: 85%;
+  }
+}
 h1 {
   font-size: 4rem;
 }
@@ -60,7 +65,12 @@ p {
 li {
   line-height: 170%;
 }
-
+@media screen and (max-width: 960px) {
+  ul {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+}
 span,
 time {
   font-size: 1rem;
@@ -159,6 +169,12 @@ footer {
 .comment {
   border: 1px solid #eee;
   padding: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .comment {
+    font-size: 0.9rem;
+  }
 }
 #top-button,
 #contact-button {
